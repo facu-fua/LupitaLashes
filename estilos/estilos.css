@@ -1,0 +1,481 @@
+/* Html */
+html {
+    font-family: "Fira Sans", sans-serif;
+    background-color: aliceblue;
+}
+
+html h1 {
+    font-family: 'Yeseva One', cursive;
+    font-weight: 100;
+}
+
+body {
+    background-color: rgba(255, 203, 233, 0.938);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+body img{
+    border-radius: 10px;
+}
+
+/* Nav */
+header {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    grid-area: nav;
+}
+
+.menu {
+    background-color: rgb(255, 255, 255);
+    margin: 10px 0px;
+    border-color: rgb(61, 60, 60);
+    border-style: groove;
+    top: 0px;
+    z-index: 2;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px 0px 0px;
+    flex-wrap: wrap;
+
+}
+
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.menu ul li {
+    list-style: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+.menu ul li:hover{
+    background-color: rgb(180, 180, 180);
+
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+}
+
+.barraBusqueda {
+    align-self: flex-end;
+}
+
+.logoTitulo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 15px;
+    margin-left: 20px;
+    grid-area: titulo;
+}
+
+.logoTitulo h1 {
+    margin: 0px 0px 0px 10px;
+    text-decoration: underline;
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+}
+
+#logo1 {
+    width: 100px;
+    height: 100px;
+}
+
+/* Section */
+section {
+    display: flex;
+    margin-top: 25px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color:rgba(240, 248, 255, 0.527);
+}
+
+/* INDEX */
+
+
+
+/* Presentacion */
+/* GRID */
+.bodyIndex{
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "titulo"
+    "frente"
+    "footer";
+}
+.frenteDePagina {
+    grid-area: frente;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+.presentacion{
+    display: flex;
+}
+
+.videopres iframe {
+    width: 560px;
+    height: 315px;
+    border: 0;
+}
+
+.textopres {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.textopres h3{
+    margin: 0;
+}
+
+.loNuevo{
+    margin: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.loNuevo img {
+    width: 200px;
+    height: 200px;
+}
+.loNuevoTexto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* PESTAÑAS */
+/* GRID */
+.bodyPestañas{
+    display: grid;
+    grid-template-areas:
+    "nav"
+    "titulo"
+    "pestañas"
+    "footer";
+}
+.seccionPestañas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    grid-area: pestañas;
+}
+
+.pestañas{
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.pestañas img{
+    width: 200px;
+    height: 200px;
+}
+
+/* GALERIA */
+/* GRID */
+.bodyGaleria{
+    display: grid;
+    grid-template-areas:
+    "nav"
+    "titulo"
+    "fotos"
+    "footer";
+}
+.galeria{
+    grid-area: fotos;
+    display: flex;
+    flex-direction: column;
+}
+.galeria img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+.fotos{
+    display: flex;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* PROMOCIONES */
+/* GRID */
+.bodyPromociones{
+    display: grid;
+    grid-template-areas:
+    "nav"
+    "titulo"
+    "promos"
+    "footer";
+}
+.contenedorPromo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    grid-area: promos;
+}
+.promocion{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.promocion img{
+    width: 200px;
+    height: 200px;
+}
+.promocion ul{
+    list-style: none;
+    text-align: center;
+}
+.promocion ul li{
+    display: none;
+}
+.promocion ul:hover li{
+    display:block;
+}
+
+/* solucionar problema: se mueven los article al activar el submenu */
+
+/* CUIDADOS */
+/* GRID */
+.bodyCuidados{
+    display: grid;
+    grid-template-areas:
+    "nav"
+    "titulo"
+    "cuidados"
+    "footer";
+}
+.cuidados{
+    grid-area: cuidados;
+    display: flex;
+    flex-direction: column;
+}
+.pregunt h3 {
+    text-align: center;
+}
+
+/* NOSOTROS */
+.bodyNosotros{
+    display: grid;
+    grid-template-areas:
+    "nav"
+    "titulo"
+    "nosotros"
+    "footer";
+}
+.nosotros{
+    grid-area: nosotros;
+    display: grid;
+    grid-template-areas:
+    "aboutus aboutus"
+    "contacto contacto"
+    "horarios ubicacion"
+    "opinion opinion";
+    grid-gap: 10px;
+    justify-items: center;
+}
+.aboutus{
+    grid-area: aboutus;
+}
+.contacto{
+    grid-area: contacto;
+}
+.contacto a {
+    margin-left: 20px;
+}
+
+.contacto img {
+    width: 20px;
+    height: 20px;
+    margin-right: 100px;
+}
+.horarios{
+    grid-area: horarios;
+}
+
+.horarios ul{
+    list-style: none;
+    padding: 0px;
+}
+.horarios ul li{
+    padding: 5px;
+}
+
+.ubicacion{
+    grid-area: ubicacion;
+}
+.ubicacion iframe{
+    width: 400px;
+    height: 200px;
+    border: 0px;
+    margin-left: 5px;
+}
+.opinion{
+    grid-area: opinion;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+/* Instagram y Whatsapp */
+.instagram img {
+    width: 40px;
+    height: 40px;
+}
+
+.instagram input {
+    width: 40px;
+    height: 40px;
+}
+
+.instagram {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
+
+/* Footer */
+body footer nav {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    grid-area: footer;
+}
+
+body footer a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+body footer a:hover{
+    background-color: rgb(180, 180, 180);
+}
+
+
+/* MediaQueries - Responsive */
+
+@media screen and (min-width:500px) and (max-width: 768px){
+    /* INDEX */
+    .presentacion{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .textopres{
+        margin-top: 10px;
+    }
+    .loNuevo{
+        flex-wrap: wrap;
+    }
+    /* PESTAÑAS */
+    /* GALERIA */
+    .fotos{
+        justify-content: space-evenly;
+    }
+    /* PROMOCIONES */
+    /* CUIDADOS */
+    /* NOSOTROS */
+}
+
+@media screen and (max-width: 499px){
+    /* INDEX */
+    .menu{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu ul{
+        flex-direction: column;
+        padding-left: 0px;
+        margin: 0px;
+    }
+    .presentacion{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .textopres{
+        margin-top: 10px;
+    }
+    .videopres iframe{
+        width: 100%;
+        height: auto;
+    }
+    .loNuevo{
+        flex-direction: column;
+    }
+    /* PESTAÑAS */
+    .seccionPestañas{
+        flex-direction: column;
+    }
+    .seccionPestañas article{
+        display: flex;
+        flex-direction: column;
+    }
+    .pestañas{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: auto;
+    }
+    /* GALERIA */
+    .fotos{
+        flex-direction: column;
+    }
+    /* PROMOCIONES */
+    .promocion{
+        width: auto;
+    }
+    /* CUIDADOS */
+    /* NOSOTROS */
+    .nosotros{
+        display: grid;
+        grid-template-areas:
+        "aboutus"
+        "contacto"
+        "horarios"
+        "ubicacion"
+        "opinion";
+        grid-gap: 10px;
+        justify-items: flex-start;
+    }
+    #dejarOpinion{
+        width: 100%;
+    }
+.ubicacion iframe{
+    width: 100%;
+    height: auto;
+}
+
+    /* Footer */
+    body footer{
+        gap: 10px;
+    }
+    body footer nav{
+        display: flex;
+        text-align: center;
+        gap: 10px;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
