@@ -41,27 +41,37 @@
 
     <section class="nosotros">
 
+        <!-- Articulo dandonos a conocer -->
         <article class="aboutus">
             <div>
                 <img src="../multimedia/Nosotros/perropromo1.jpg" alt="nosotros">
                 <!-- foto lupe y dueña, o foto estudio trabajando -->
             </div>
-            <h2 id="nosotros">Sobre Lupita</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint dicta quaerat maxime necessitatibus optio
-                distinctio consectetur esse magni quam cum nemo exercitationem corporis, voluptatem est adipisci
-                officiis temporibus dolore molestias quisquam quod! Corrupti, aliquam fuga! Cumque ut qui alias neque.
-            </p>
+            <div>
+                <h2 id="nosotros">Sobre Lupita</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint dicta quaerat maxime necessitatibus
+                    optio
+                    distinctio consectetur esse magni quam cum nemo exercitationem corporis, voluptatem est adipisci
+                    officiis temporibus dolore molestias quisquam quod! Corrupti, aliquam fuga! Cumque ut qui alias
+                    neque.
+                </p>
+            </div>
         </article>
 
-        <article class="contacto">
+        <!-- Articulos y divs para informacion -->
+        <article class="articuloContacto">
             <h4>Por turnos, comunicate a traves de nuestro Instagram o WhatsApp</h4>
-            <a target="_blank" href="https://www.instagram.com/lupitalashes.ros/">Instagram</a>
-            <img src="../multimedia/instagram.png" alt="logo instagram">
-            <a href="https://wa.me/qr/JH7KEWBOBXBXJ1">WhatsApp</a>
-            <img src="../multimedia/whatsapp.png" alt="logo whatsapp">
-            <!-- <img src="" alt="Logo Instagram"> -->
+            <div class="contacto">
+                <div>
+                    <a target="_blank" href="https://www.instagram.com/lupitalashes.ros/">Instagram</a>
+                    <img src="../multimedia/instagram.png" alt="logo instagram">
+                </div>
+                <div>
+                    <a href="https://wa.me/qr/JH7KEWBOBXBXJ1">WhatsApp</a>
+                    <img src="../multimedia/whatsapp.png" alt="logo whatsapp">
+                </div>
+            </div>
         </article>
-
 
         <div class="horarios">
             <h4>Horarios</h4>
@@ -82,13 +92,13 @@
                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-
+<!-- Articulo form para opiniones -->
         <article class="opinion">
+            <h4 id="sugerencias">Dejanos tu opinion</h4>
+            <p>Tus consultas o sugerencias son anonimas y nos ayudan a mejorar nuestro serivio</p>
             <form action="" method="post">
+                <textarea name="" id="dejarOpinion" cols="60" rows="10"></textarea>
                 <label for="sugerencias"></label>
-                <h3 id="sugerencias">Dejanos tu opinion</h3>
-                <p>Tus consultas o sugerencias son anonimas y nos ayudan a mejorar nuestro serivio</p>
-                    <textarea name="" id="dejarOpinion" cols="60" rows="10"></textarea>
                 <input type="submit" value="Enviar">
             </form>
         </article>
@@ -104,11 +114,11 @@
     </div>
 
     <footer>
-        <Nav>
+        <nav class="footer">
             <a href="../index.html">Voler al Inicio</a>
             <a href="cuidados.html#preguntas">Preguntas Frecuentes</a>
             <a href="nosotros.html#sugerencias">Dejanos tu opinion</a>
-        </Nav>
+        </nav>
     </footer>
 </body>
 
