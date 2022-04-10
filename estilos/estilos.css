@@ -236,6 +236,7 @@ section {
     width: 200px;
     height: 200px;
     margin: 10px;
+    box-shadow: 3px 3px rgba(124, 124, 124, 0.541);
 }
 
 .fotos {
@@ -462,6 +463,7 @@ section {
     margin-top: 50px;
     margin-bottom: 20px;
     grid-area: footer;
+    border-radius: 15px;
 }
 
 .footer a {
@@ -482,6 +484,9 @@ body footer a:hover {
 @media screen and (min-width:500px) and (max-width: 768px) {
 
     /* INDEX */
+    .menu{
+        justify-content: flex-start;
+    }
     .presentacion {
         flex-direction: column;
         flex-wrap: wrap;
@@ -509,9 +514,13 @@ body footer a:hover {
 @media screen and (max-width: 499px) {
 
     /* INDEX */
+    header{
+        position: relative;
+    }
     .menu {
         flex-direction: column;
         align-items: flex-start;
+        gap: 10px;
     }
 
     .menu ul {
@@ -577,6 +586,10 @@ body footer a:hover {
             "opinion";
         grid-gap: 10px;
         justify-items: flex-start;
+    }
+
+    .aboutus{
+        flex-direction: column;
     }
 
     #dejarOpinion {
