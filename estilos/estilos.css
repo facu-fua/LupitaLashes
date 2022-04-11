@@ -1,7 +1,7 @@
 /* Html */
 html {
     font-family: "Fira Sans", sans-serif;
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
 }
 
 html h1 {
@@ -10,7 +10,8 @@ html h1 {
 }
 
 body {
-    background-color: rgba(255, 203, 233, 0.938);
+/*     background-color: rgba(255, 203, 233, 0.938); */
+background: radial-gradient(ellipse 90% 75%,rgba(255, 203, 233, 0.938) 30%,rgb(255, 255, 255)  );
     border-radius: 10px;
     padding: 15px;
 }
@@ -149,20 +150,23 @@ section {
     justify-content: space-around;
 }
 
-.loNuevo img {
+.loNuevo a img {
     width: 180px;
     height: 180px;
     border-radius: 20px;
     background-color: aliceblue;
     padding: 10px;
     box-shadow: 3px 3px rgba(124, 124, 124, 0.541);
+    transition: 1s;
+}
+.loNuevo a img:hover{
+    background-color: black;
+    filter: blur(1.4px);
+    width: 200px;
+    height: 200px;
 }
 
-/* .img1 img{
-    background-color: aliceblue;
-    padding: 10px;
-    border-radius: 50px;
-} */
+
 .loNuevoTexto {
     display: flex;
     flex-direction: column;
@@ -212,7 +216,13 @@ section {
     border-radius: 20px;
     background-color: aliceblue;
     box-shadow: 3px 3px rgba(124, 124, 124, 0.541);
-
+    transition: 1s;
+}
+.pestañas img:hover{
+        background-color: black;
+        filter: blur(1.4px);
+        width: 200px;
+        height: 200px;
 }
 
 /* GALERIA */
@@ -294,13 +304,14 @@ section {
     text-align: center;
 }
 
-.promocion ul li {
+.leerMas li{
     display: none;
+/* como se podria hacer para que la transicion a block sea lenta? */
 }
-
-.promocion ul:hover li {
+.leerMas:hover li{
     display: block;
 }
+
 
 /* CUIDADOS */
 /* GRID */
