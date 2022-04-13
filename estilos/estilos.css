@@ -319,6 +319,8 @@ section {
     width: 180px;
     height: 180px;
     margin: 10px;
+    border-radius: 20px;
+    box-shadow: 3px 3px rgba(124, 124, 124, 0.541);
 }
 .promocion ul {
     padding: 5px;
@@ -554,12 +556,17 @@ body footer a:hover {
 
 /* MediaQueries - Responsive */
 
-@media screen and (min-width:500px) and (max-width: 768px) {
+@media screen and (min-width:500px) and (max-width: 991px) {
 
     /* INDEX */
     .menu{
         justify-content: flex-start;
     }
+
+    .logoTitulo{
+        flex-wrap: nowrap;
+    }
+
     .presentacion {
         flex-direction: column;
         flex-wrap: wrap;
@@ -606,7 +613,7 @@ body footer a:hover {
     }
 
     .logoTitulo{
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
 
     .presentacion {
