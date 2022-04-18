@@ -10,7 +10,6 @@ html h1 {
 }
 
 body {
-/*     background-color: rgba(255, 203, 233, 0.938); */
 background: radial-gradient(ellipse 90% 75%,rgba(255, 203, 233, 0.938) 30%,rgb(255, 255, 255)  );
     border-radius: 10px;
     padding: 15px;
@@ -39,47 +38,10 @@ header {
     font-weight: bold;
 }
 
-/* .menu {
-    background-color: rgb(255, 255, 255);
-    margin: 10px 0px;
-    border-color: rgb(61, 60, 60);
-    border-style: groove;
-    top: 0px;
-    flex-grow: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 15px 0px 0px;
-    flex-wrap: wrap;
+.navbar-brand{
+    font-family: 'Yeseva One', cursive;
+    text-decoration: underline;
 }
-.menu ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin: 10px 0px;
-}
-.menu ul li {
-    list-style: none;
-    border-radius: 10px;
-    padding: 5px;
-}
-.menu ul li:hover {
-    background-color: rgb(180, 180, 180);
-}
-.menu ul li a {
-    text-decoration: none;
-    color: black;
-    display: flex;
-}
-.menu input{
-    margin: 0px 0px 5px 5px;
-}
-
-.barraBusqueda {
-    align-self: flex-end;
-} */
-
-
 
 .logoTitulo {
     --bs-gutter-x: 0px;
@@ -87,7 +49,6 @@ header {
     align-items: center;
     justify-content: flex-start;
     margin: 0px 0px 15px 20px;
-    grid-area: titulo;
 }
 .logoTitulo h1 {
     margin: 0px 0px 0px 10px;
@@ -114,22 +75,6 @@ section {
 /* INDEX */
 
 /* Presentacion */
-/* GRID */
-/* .bodyIndex {
-    display: grid;
-    grid-template-areas:
-        "nav"
-        "titulo"
-        "frente"
-        "footer";
-} */
-
-/* .frenteDePagina {
-    grid-area: frente;
-    display: grid;
-    grid-template-rows: 1fr auto;
-} */
-
 .presentacion {
     display: flex;
     --bs-gutter-x: 0px;
@@ -185,33 +130,18 @@ section {
 }
 
 /* PESTAÑAS */
-/* GRID */
-/* .bodyPestañas {
-    display: grid;
-    grid-template-areas:
-        "nav"
-        "titulo"
-        "pestañas"
-        "footer";
-} */
-
 .seccionPestañas {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
     margin-top: 25px;
-    grid-area: pestañas;
 }
 .seccionPestañas article h3{
     font-weight: bold;
 }
 
 .pestanias {
-/*     width: 500px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; */
     padding-top: 15px;
     margin-bottom: 20px;
     border-radius: 20px;
@@ -219,7 +149,6 @@ section {
 }
 .pestanias ul {
     margin-left: 0px;
-    /*     padding: 0px; */
 }
 .pestanias ul li {
     margin: 5px;
@@ -233,16 +162,6 @@ section {
 }
 
 /* GALERIA */
-/* GRID */
-/* .bodyGaleria {
-    display: grid;
-    grid-template-areas:
-        "nav"
-        "titulo"
-        "fotos"
-        "footer";
-} */
-
 .galeria {
     grid-area: fotos;
     display: flex;
@@ -255,8 +174,6 @@ section {
     --bs-gutter-x: 0px; /* agregado por bootstrap */
     width: 200px;
     height: 200px;
-/*     margin: 10px;
-    box-shadow: 3px 3px rgba(124, 124, 124, 0.541); */
 }
 
 .galeria article{
@@ -271,34 +188,12 @@ section {
     padding: 10px;
 }
 
-/* .fotos {
-    background-color: aliceblue;
-    border-radius: 20px;
-    box-shadow: 3px 3px rgba(124, 124, 124, 0.541);
-    display: flex;
-    margin-bottom: 50px;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-} */
-
 /* PROMOCIONES */
-/* GRID */
-/* .bodyPromociones {
-    display: grid;
-    grid-template-areas:
-        "nav"
-        "titulo"
-        "promos"
-        "footer";
-} */
-
 .contenedorPromo {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 30px;
-    grid-area: promos;
 }
 
 .promocion {
@@ -341,18 +236,7 @@ section {
 
 
 /* CUIDADOS */
-/* GRID */
-/* .bodyCuidados {
-    display: grid;
-    grid-template-areas:
-        "nav"
-        "titulo"
-        "cuidados"
-        "footer";
-} */
-
 .cuidados {
-    grid-area: cuidados;
     display: flex;
     flex-direction: column;
 }
@@ -389,26 +273,6 @@ section {
 }
 
 /* NOSOTROS */
-/* .bodyNosotros {
-    display: grid;
-    grid-template-areas:
-        "nav"
-        "titulo"
-        "nosotros"
-        "footer";
-} */
-
-/* .nosotros {
-    grid-area: nosotros;
-    display: grid;
-    grid-template-areas:
-        "aboutus aboutus"
-        "contacto contacto"
-        "horarios ubicacion"
-        "opinion opinion";
-    grid-gap: 10px;
-} */
-
 .nosotros h2{
     margin: 0px;
     align-self: flex-start; /* .row agrega display:flex */
@@ -430,7 +294,6 @@ section {
 
 .aboutus {
     --bs-gutter-x: 0px;
-    grid-area: aboutus;
     display: flex;
     align-items: flex-start;
     gap: 10px;
@@ -447,7 +310,6 @@ section {
 .articuloContacto {
     --bs-gutter-x: 0px;
     margin: 25px 0px;
-    grid-area: contacto;
 }
 
 .contacto{
@@ -474,7 +336,6 @@ section {
     padding-right: 10px;
     --bs-gutter-x: 0px;
     align-items: flex-start;
-    grid-area: horarios;
 }
 .horarios ul {
     list-style: none;
@@ -487,7 +348,6 @@ section {
 .ubicacion {
     padding-left: 10px;
     --bs-gutter-x: 0px;
-    grid-area: ubicacion;
     align-items: flex-start;
     justify-content: center;
 }
@@ -500,7 +360,6 @@ section {
 
 .opinion {
     --bs-gutter-x: 0px;
-    grid-area: opinion;
     margin-top: 20px;
     text-align: center;
     display: flex;
@@ -664,14 +523,6 @@ body footer a:hover {
     /* CUIDADOS */
     /* NOSOTROS */
     .nosotros {
-        /* display: grid;
-        grid-template-areas:
-            "aboutus"
-            "contacto"
-            "horarios"
-            "ubicacion"
-            "opinion";
-        grid-gap: 10px; */
         justify-items: flex-start;
     }
 
