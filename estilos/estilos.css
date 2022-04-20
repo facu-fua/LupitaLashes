@@ -10,7 +10,7 @@ html h1 {
 }
 
 body {
-background: radial-gradient(ellipse 90% 75%,rgba(255, 203, 233, 0.938) 30%,rgb(255, 255, 255)  );
+    background: radial-gradient(ellipse 90% 75%,rgba(255, 203, 233, 0.938) 30%,rgb(255, 255, 255)  );
     border-radius: 10px;
     padding: 15px;
     font-family: "Fira Sans", sans-serif;
@@ -163,7 +163,6 @@ section {
 
 /* GALERIA */
 .galeria {
-    grid-area: fotos;
     display: flex;
     flex-direction: column;
 }
@@ -397,7 +396,6 @@ section {
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 50px 20px 20px 20px;
-    grid-area: footer;
     border-radius: 15px;
 }
 .footer a {
@@ -408,7 +406,7 @@ section {
     border-radius: 10px;
 }
 
-body footer a:hover {
+.footer a:hover {
     background-color: rgb(180, 180, 180);
 }
 
