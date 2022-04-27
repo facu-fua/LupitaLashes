@@ -28,26 +28,59 @@ body {
 
 /* Nav */
 header {
-    display: flex;
-    position: sticky;
-    top: 0px;
-    padding: 15px;
-    z-index: 2;
+    padding-bottom: 15px;
 }
 
 .menuBoot {
     border-color: rgb(61, 60, 60);
     border-style: groove;
     background-color: $colorFondo;
+}
 
-    a {
-        font-weight: bold;
-    }
+.menuItems{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.navbar-nav{
+    gap: 20px;
 }
 
 .navbar-brand {
     font-family: $fuentePrimaria;
     text-decoration: underline;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+.menuBorder{
+    border-left: solid;
+    border-width: 1px;
+    padding-left: 20px;
+}
+
+.turnos{
+    background-color: $colorFondo;
+    border-radius: 20px;
+    margin-right: 5px;
+    color: black;
+    font-weight: bold;
+    border-color: black;
+    img{
+        @include tamaños(25px,25px)
+    }
+}
+
+/* EXTEND */
+.turnos1{
+    @extend .turnos;
+    flex-grow: 1;
+}
+
+.turnoDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .logoTitulo {
@@ -75,7 +108,9 @@ header {
 
 /* Section */
 section {
+    --bs-gutter-x: 0px;
     display: flex;
+    justify-content: center;
     padding: 10px;
     border-radius: 15px;
     background-color: $coloSobreFondo;
@@ -102,10 +137,11 @@ section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 50px;
 
     h3 {
         margin: 0;
-        font-weight: bold;
+        text-align: center;
     }
 
     p {
@@ -117,11 +153,21 @@ section {
     margin: 40px 0px 0px 0px;
     display: flex;
     justify-content: space-around;
+    h4{
+        text-align: center;
+    }
+    div{
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     a {
         img {
-            width: 180px;
-            height: 180px;
+            @include tamaños(180px,180px);
+            /* width: 180px;
+            height: 180px; */
             border-radius: 20px;
             background-color: $colorFondo;
             padding: 10px;
@@ -130,20 +176,33 @@ section {
             transition: 1s;
 
             &:hover {
-                background-color: black;
                 filter: blur(1.4px);
-                width: 200px;
-                height: 200px;
+                @include tamaños(200px,200px)
             }
         }
     }
 }
 
-.loNuevoTexto {
-    padding-top: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.carousel{
+    max-width: 700px;
+    height: 100%;
+}
+
+.carousel-item{
+    img{
+        width: 100%;
+        height: 400px;
+    }
+}
+
+.carousel-caption{
+    color: black;
+    font-weight: bold;
+    background-color: $coloSobreFondo;
+    border-radius: 5px;
+    h5{
+        font-weight: bold;
+    }
 }
 
 /* PESTAÑAS */
@@ -174,40 +233,10 @@ section {
             margin: 5px;
         }
     }
-
-    img {
-        width: 180px;
-        height: 180px;
-        border-radius: 20px;
-        box-shadow: 3px 3px $colorSombra;
-        transition: 1s;
-    }
-}
-
-/* GALERIA */
-.galeria {
-    display: flex;
-    flex-direction: column;
-
-    h3 {
-        font-weight: bold;
-    }
-
-    img {
-        --bs-gutter-x: 0px;
-        /* agregado por bootstrap */
-        width: 200px;
-        height: 200px;
-    }
-
-    article {
-        margin-bottom: 50px;
-    }
 }
 
 .fotoBoot {
-    width: 500px;
-    height: 100%;
+    max-width: 500px;
     background-color: $colorFondo;
     border-radius: 20px;
     padding: 10px;
@@ -237,11 +266,11 @@ section {
     }
 
     img {
-        width: 180px;
-        height: 180px;
+        @include tamaños(220px,180px);
         margin: 10px;
         border-radius: 20px;
         box-shadow: 3px 3px $colorSombra;
+        --bs-gutter-x: 0px;
     }
 
     ul {
@@ -252,6 +281,7 @@ section {
 
     p {
         text-align: center;
+        flex-grow: 1;
     }
 }
 
@@ -284,12 +314,17 @@ section {
 .cuidado {
     margin-bottom: 20px;
 
+    /* Extend */
+.tituloSeparador{
+    border-style: map-get($tituloSeparador,borde);
+    text-align: map-get($map: $tituloSeparador, $key:alineacion );
+    background-color: map-get($map: $tituloSeparador, $key: colorFondo);
+    border-radius: map-get($map: $tituloSeparador, $key:radioBorde )
+}
+
     h3 {
-        text-align: center;
+        @extend .tituloSeparador;
         padding: 5px;
-        background-color: $colorFondo;
-        border-radius: 20px;
-        box-shadow: 3px 3px $colorSombra;
     }
 
     p {
@@ -305,55 +340,28 @@ section {
 
 .pregunt {
     h3 {
-        text-align: center;
+        width: 100%;
         padding: 5px;
-        background-color: $colorFondo;
-        border-radius: 20px;
-        box-shadow: 3px 3px $colorSombra;
+        /* Map-get con dos distintas sintaxis */
+        border-style: map-get($tituloSeparador,borde);
+        text-align: map-get($map: $tituloSeparador, $key:alineacion );
+        background-color: map-get($map: $tituloSeparador, $key: colorFondo);
+        border-radius: map-get($map: $tituloSeparador, $key:radioBorde );
     }
 }
 
-/* NOSOTROS */
-.nosotros {
-    h2 {
-        margin: 0px;
-        align-self: flex-start;
-        /* .row agrega display:flex */
-        padding: 10px 15px;
-        background-color: $colorFondo;
-        border-radius: 20px;
-        box-shadow: 3px 3px $colorSombra;
-        text-align: center;
-        font-weight: bold;
-    }
-
+/* CONTACTO */
+.sectionContacto {
     h4 {
-        padding: 10px 15px;
-        text-align: center;
+        /* @extend .tituloSeparador; porque esto no se aplica? */
+        border-style: map-get($tituloSeparador,borde);
+        text-align: map-get($map: $tituloSeparador, $key:alineacion );
         background-color: $colorFondo;
         border-radius: 20px;
-        box-shadow: 3px 3px $colorSombra;
+        padding: 10px 15px;
         font-weight: bold;
     }
 }
-
-.aboutus {
-    --bs-gutter-x: 0px;
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-
-    p {
-        text-align: center;
-    }
-
-    img {
-        --bs-gutter-x: 0px;
-        width: 250px;
-        height: 230px;
-    }
-}
-
 .articuloContacto {
     --bs-gutter-x: 0px;
     margin: 25px 0px;
@@ -362,11 +370,13 @@ section {
 .contacto {
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 50px;
 
     a {
+        font-size: 20px;
         border-radius: 10px;
-        padding: 5px;
-        margin-left: 20px;
+        padding: 15px;
+        margin-top: 30px;
         text-decoration: none;
         color: black;
         font-weight: bold;
@@ -377,8 +387,8 @@ section {
     }
 
     img {
-        width: 20px;
-        height: 20px;
+        @include tamaños (40px,40px);
+        margin-left: 10px;
     }
 }
 
@@ -411,6 +421,47 @@ section {
     }
 }
 
+/* NOSOTROS */
+.nosotros {
+    h2 {
+        border-style: map-get($tituloSeparador,borde);
+        background-color: map-get($map: $tituloSeparador, $key: colorFondo);
+        border-radius: 20px;
+        text-align: map-get($map: $tituloSeparador, $key:alineacion );
+        margin: 0px;
+        align-self: flex-start;
+        /* .row agrega display:flex */
+        padding: 10px 15px;
+        font-weight: bold;
+    }
+
+    h4 {
+        border-style: map-get($tituloSeparador,borde);
+        text-align: map-get($map: $tituloSeparador, $key:alineacion );
+        background-color: map-get($map: $tituloSeparador, $key: colorFondo);
+        border-radius: 20px;
+        padding: 10px 15px;
+        font-weight: bold;
+    }
+}
+
+.aboutus {
+    --bs-gutter-x: 0px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 50px;
+
+    p {
+        text-align: center;
+    }
+
+    img {
+        --bs-gutter-x: 0px;
+        @include tamaños(250px,230px);
+    }
+}
+
 .opinion {
     --bs-gutter-x: 0px;
     margin-top: 20px;
@@ -424,23 +475,6 @@ section {
         align-items: center;
         justify-content: center;
         gap: 10px;
-    }
-}
-
-/* Instagram y Whatsapp */
-.instagram {
-    position: fixed;
-    bottom: 30px;
-    right: 20px;
-
-    img {
-        width: 40px;
-        height: 40px;
-    }
-
-    input {
-        width: 40px;
-        height: 40px;
     }
 }
 
@@ -464,6 +498,11 @@ section {
             background-color: $colorSombra;
         }
     }
+}
+
+.footer3{
+    display: flex;
+    justify-content: space-around;
 }
 
 /* MediaQueries - Responsive */

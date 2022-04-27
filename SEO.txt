@@ -1,0 +1,39 @@
+Se agregaron los siguientes elementos para el SEO:
+
+-En Index:
+
+	Titulo: Lupitalashes inicio
+	Keywords: pestañas eyelashes lashes lupitalashes belleza beauty lashista
+	Description: Bienvenidas a Lupitalashes, el mejor sitio para colocarte las pestañas que mas te gusten. Conoce nuestras promociones y a nuestras lashistas de confianza.
+
+-En Pestañas:
+
+	Titulo: Tipos de pestañas
+	Keywords: pestañas lupitalashes clasicas cateye 5d decorado eyelashes ojos turnos precio costo
+	Description: Aqui podras encontrar la variedad de pestañas que colocamos, informacion sobre las mismas e imagenes de nuestros trabajos realizados.
+
+-En Promociones:
+
+	Titulo: Nuestras promociones
+	Keywords: promociones lupitalashes promocion pestañas eyelashes descuentos sorteo 2x1 baratas
+	Description: Lupitalashes ofrece promociones y descuentos para nuetras clientas, entra y conoce sus benificios!
+
+-En Cuidados:
+
+	Titulo: Cuidado de pestañas
+	Keywords: preguntas eyelashes pestañas cuidados duracion proteccion importante lupitalashes
+	Description: Es muy importante cuidar tus pestañas para que estas duren lo maximo posible, aca te dejamos lo que necesitas saber.
+
+-En Contacto:
+
+	Titulo: Informacion de contacto
+	Keywords: pestañas contacto whatsapp instagram ubicacion turnos informacion eyelashes lupitalashes
+	Description: Que estas esperando para venir a hacerte las pestañas con nosotras, aca te dejamos los medios para contactarte.
+
+-En Nosotros:
+
+	Titulo: Sobre Lupitalashes
+	Keywords: keywords" content="pestañas eyelashes lashes lupitalashes nosotros historia sugerencias opiniones sobre
+	Description: Lupitalashes esta creciendo y cada vez mas personas se suman a nuestra clientela. Aprende mas sobre nosotras, nuestro comienzo y nuestras metas.
+
+Tambien agregue los alt para las imagenes.

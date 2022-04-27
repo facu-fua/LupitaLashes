@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pestañas</title>
+    <!-- Descripcion -->
+    <meta name="description" content="Aqui podras encontrar la variedad de pestañas que colocamos, informacion sobre las mismas e imagenes de nuestros trabajos realizados.">
+    <!-- SEO Keywords -->
+    <meta name="keywords" content="pestañas lupitalashes clasicas cateye 5d decorado eyelashes ojos turnos precio costo">
+    <title>Tipos de pestañas</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="../multimedia/logo.png" type="image/x-icon">
     <!-- CSS Bootstrap -->
@@ -19,13 +23,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,200&family=Sail&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <!-- Animacion -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
-<body class="bodyPestañas container-fluid">
+<body class="container-fluid">
 
-    <header class="row">
+    <header id="top" class="row">
 
         <!-- Menu navbar de Bootstrap -->
         <nav class="menuBoot navbar navbar-expand-lg navbar-light bg-light">
@@ -36,13 +41,13 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="menuItems collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="pestañas.html">Pestañas</a>
+                            <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="galeria.html">Galeria</a>
+                            <a class="nav-link active" aria-current="page" href="pestañas.html">Pestañas</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="promociones.html">Promociones</a>
@@ -51,13 +56,20 @@
                             <a class="nav-link" href="cuidados.html">Cuidados</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="nosotros.html">Nosotros</a>
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                    <div class="menuBorder">
+                        <a target="_blank" class="turnos btn btn-primary" href="https://walink.co/123776"
+                            alt="logo whatsapp" role="button">Turnos <img src="../multimedia/whatsapp.png"
+                                alt="logo whatsapp"></a>
+                        <a target="_blank" class="turnos btn btn-primary"
+                            href="https://www.instagram.com/lupitalashes.ros/" alt="logo instagram" role="button"> <img
+                                src="../multimedia/instagram.png" alt="logo whatsapp"></a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -65,74 +77,202 @@
     </header>
 
     <!-- Logo y titulo para cada html -->
-    <div id="top" class="logoTitulo row">
+    <div class="logoTitulo row">
         <img class="col-1" src="../multimedia/eyelashes.png" alt="pestaña" id="logo">
-        <h1 class="col-10">Pestañas</h1>
+        <h1 class="animate__animated animate__fadeInUp col-10">Pestañas</h1>
     </div>
 
     <section class="seccionPestañas row container-fluid">
 
         <!--Cada articulo es una categoria de pestañas con informacion importante  -->
-        <article class="row col-xs-12 col-md-6 col-lg-4">
+        <article class="row col-xs-12 col-md-6 col-lg-6">
             <h3>Clasicas</h3>
-            <div class="pestanias card" style="width: 18rem;">
-                <img src="../multimedia/galeria/clasica.jpg" class="card-img-top" alt="...">
+
+            <div class="pestanias card">
+                <div id="carouselExampleFade1" class="fotoBoot carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../multimedia/galeria/clasica1.jpg" class="d-block w-100" alt="pestañaClasica1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../multimedia/galeria/clasica2.jpg" class="d-block w-100" alt="pestañaClasica2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../multimedia/galeria/clasica3.jpg" class="d-block w-100" alt="pestañaClasica3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../multimedia/galeria/clasica4.jpg" class="d-block w-100" alt="pestañaClasica4">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade1"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade1"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
                 <div class="card-body">
-                        <ul>
-                            <li>Precio: $xxxx</li>
-                            <li>Tiempo: xxHrs</li>
-                            <li>Duracion: xxDias</li>
-                            <li>Service: $xxxx</li>
-                            <li>Remocion: $xxxx</li>
-                        </ul>
-                    <a href="galeria.html#gal1" class="btn btn-primary">Ver mas</a>
+                    <ul>
+                        <li>Precio: $1400</li>
+                        <li>Tiempo: 1:30Hrs</li>
+                        <li>Duracion: 10/15 Dias</li>
+                        <li>Service: $800</li>
+                        <li>Remocion: $500</li>
+                    </ul>
                 </div>
             </div>
         </article>
 
-        <article class="row col-xs-12 col-md-6 col-lg-4">
+        <article class="row col-xs-12 col-md-6 col-lg-6">
             <h3>Decorado</h3>
-            <div class="pestanias card" style="width: 18rem;">
-                <img src="../multimedia/galeria/decorado.webp" class="card-img-top" alt="...">
+
+            <div class="pestanias card">
+                <div id="carouselExampleFade2" class="fotoBoot carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../multimedia/galeria/decorado.webp" class="d-block w-100" alt="pestañaDecorado1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../multimedia/galeria/decorado1.webp" class="d-block w-100" alt="pestañaDecorado2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../multimedia/galeria/decorado2.jpg" class="d-block w-100" alt="pestañaDecorado3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../multimedia/galeria/decorado3.jpg" class="d-block w-100" alt="pestañaDecorado4">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade2"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade2"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
                 <div class="card-body">
-                        <ul>
-                            <li>Precio: $xxxx</li>
-                            <li>Tiempo: xxHrs</li>
-                            <li>Duracion: xxDias</li>
-                            <li>Service: $xxxx</li>
-                            <li>Remocion: $xxxx</li>
-                        </ul>
-                    <a href="galeria.html#gal2" class="btn btn-primary">Ver mas</a>
+                    <ul>
+                        <li>Precio: $2300</li>
+                        <li>Tiempo: 2/3Hrs</li>
+                        <li>Duracion: 10/15 Dias</li>
+                        <li>Service: $1400</li>
+                        <li>Remocion: $500</li>
+                    </ul>
                 </div>
             </div>
         </article>
 
-        <article class="row col-xs-12 col-md-6 col-lg-4">
+        <article class="row col-xs-12 col-md-6 col-lg-6">
             <h3>Efecto Cateye</h3>
-            <div class="pestanias card" style="width: 18rem;">
-                <img src="../multimedia/galeria/cateye.jpg" class="card-img-top" alt="...">
+
+            <div class="pestanias card">
+
+                <div id="carouselExampleFade3" class="fotoBoot carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../multimedia/galeria/cateye.jpg" class="d-block w-100" alt="pestañaCateye1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../multimedia/galeria/cateye1.jpg" class="d-block w-100" alt="pestañaCateye2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../multimedia/galeria/cateye2.jpg" class="d-block w-100" alt="pestañaCateye3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../multimedia/galeria/cateye3.jpg" class="d-block w-100" alt="pestañaCateye4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../multimedia/galeria/cateye4.jpeg" class="d-block w-100" alt="pestañaCateye5">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade3"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade3"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
                 <div class="card-body">
-                        <ul>
-                            <li>Precio: $xxxx</li>
-                            <li>Tiempo: xxHrs</li>
-                            <li>Duracion: xxDias</li>
-                            <li>Service: $xxxx</li>
-                            <li>Remocion: $xxxx</li>
-                        </ul>
-                    <a href="galeria.html#gal3" class="btn btn-primary">Ver mas</a>
+                    <ul>
+                        <li>Precio: $1500</li>
+                        <li>Tiempo: 1:30 Hrs</li>
+                        <li>Duracion: 10/15 Dias</li>
+                        <li>Service: $800</li>
+                        <li>Remocion: $500</li>
+                    </ul>
                 </div>
             </div>
         </article>
+
+        <article class="row col-xs-12 col-md-6 col-lg-6">
+            <h3 id="volumen">Volumen 5D</h3>
+
+            <div class="pestanias card">
+
+                <div id="carouselExampleFade4" class="fotoBoot carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../multimedia/galeria/5d.jpg" class="d-block w-100" alt="pestaña5d1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../multimedia/galeria/5d1.png" class="d-block w-100" alt="pestaña5d2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../multimedia/galeria/5d2.jpg" class="d-block w-100" alt="pestaña5d3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../multimedia/galeria/5d3.jpg" class="d-block w-100" alt="pestaña5d4">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../multimedia/galeria/5d4.jpg" class="d-block w-100" alt="pestaña5d5">
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade4"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade4"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <div class="card-body">
+                    <ul>
+                        <li>Precio: $1600</li>
+                        <li>Tiempo: 1:45 Hrs</li>
+                        <li>Duracion: 10/15 Dias</li>
+                        <li>Service: $800</li>
+                        <li>Remocion: $500</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <div class="turnoDiv">
+            <a target="_blank" class="turnos1 btn btn-primary" href="https://walink.co/123776" alt="logo whatsapp"
+                role="button">Solicitar Turno <img src="../multimedia/whatsapp.png" alt="logo whatsapp"></a>
+            <a target="_blank" class="turnos1 btn btn-primary" href="https://www.instagram.com/lupitalashes.ros/"
+                alt="logo instagram" role="button">Solicitar Turno <img src="../multimedia/instagram.png" alt="logo whatsapp"></a>
+        </div>
 
     </section>
-
-    <!-- Links flotantes para acceso rapido -->
-    <div class="instagram">
-        <a target="_blank" href="https://www.instagram.com/lupitalashes.ros/"> <img src="../multimedia/instagram.png"
-                alt="instagram"></a>
-        <a target="_blank" href="https://wa.me/qr/JH7KEWBOBXBXJ1"> <img src="../multimedia/whatsapp.png"
-                alt="whatsapp"></a>
-    </div>
 
     <!-- Footer con links de interes -->
     <footer class="row">
@@ -142,6 +282,18 @@
             <a href="cuidados.html#preguntas">Preguntas Frecuentes</a>
             <a href="contacto.html#sugerencias">Dejanos tu Opinion</a>
         </nav>
+
+        <div class="footer col-11">
+            <p>Seguinos en <a href="https://www.instagram.com/lupitalashes.ros/">Instagram</a></p>
+            <p>Contactate por <a href="https://walink.co/123776">Whatsapp</a></p>
+            <p>Veni a conocernos en <a href="https://goo.gl/maps/pc9YW4PvcWj1XgwV6">Fisherton, Rosario</a> </p>
+        </div>
+
+        <div class="footer3 col-11">
+            <p>Copyright LupitaLashes</p>
+            <p>Todos los derechos reservados.</p>
+        </div>
+
     </footer>
 
     <!-- Js Bootstrap -->

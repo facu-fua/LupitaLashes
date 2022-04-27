@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>promociones</title>
+    <!-- Descripcion -->
+    <meta name="description" content="Lupitalashes ofrece promociones y descuentos para nuetras clientas, entra y conoce sus benificios!">
+    <!-- SEO Keywords -->
+    <meta name="keywords" content="promociones lupitalashes promocion pestañas eyelashes descuentos sorteo 2x1 baratas">
+    <title>Nuestras promociones</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="../multimedia/logo.png" type="image/x-icon">
     <!-- CSS Bootstrap -->
@@ -19,13 +23,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,200&family=Sail&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <!-- Animacion -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
-<body class="bodyPromociones container-fluid">
+<body class="container-fluid">
 
-    <header class="row">
+    <header id="top" class="row">
 
         <!-- Menu navbar de Bootstrap -->
         <nav class="menuBoot navbar navbar-expand-lg navbar-light bg-light">
@@ -39,10 +44,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="pestañas.html">Pestañas</a>
+                            <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="galeria.html">Galeria</a>
+                            <a class="nav-link" href="pestañas.html">Pestañas</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="promociones.html">Promociones</a>
@@ -51,13 +56,20 @@
                             <a class="nav-link" href="cuidados.html">Cuidados</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="nosotros.html">Nosotros</a>
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                    <div class="menuBorder">
+                        <a target="_blank" class="turnos btn btn-primary" href="https://walink.co/123776"
+                            alt="logo whatsapp" role="button">Turnos <img src="../multimedia/whatsapp.png"
+                                alt="logo whatsapp"></a>
+                        <a target="_blank" class="turnos btn btn-primary"
+                            href="https://www.instagram.com/lupitalashes.ros/" alt="logo instagram" role="button"> <img
+                                src="../multimedia/instagram.png" alt="logo whatsapp"></a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -67,7 +79,7 @@
     <!-- Logo y titulo para cada html -->
     <div id="top" class="logoTitulo row">
         <img class="col-1" src="../multimedia/discount.png" alt="promo" id="logo">
-        <h1 class="col-10">Promociones</h1>
+        <h1 class="animate__animated animate__fadeInUp col-10">Promociones</h1>
     </div>
 
 
@@ -75,9 +87,9 @@
 
         <!-- Cada articulo es una promocion diferente -->
         <article class="promocion row col-6">
-            <img id="promocion" src="../multimedia/promociones/amiga.jpeg" alt="amiga">
-            <h3>Promo Amigas</h3>
-            <p>Trae a una amiga y llevate un descuento del 20% para ambas.</p>
+            <img id="promocion" src="../multimedia/promociones/amiga.jpeg" alt="promoAmiga">
+            <h3 id="2x1">Promo Amigas 2x1</h3>
+            <p>Trae a una amiga y llevate un descuento del 50% para ambas.</p>
             <div class="accordion accordion-flush" id="accordionFlushExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingOne">
@@ -142,9 +154,9 @@
         </article>
 
         <article class="promocion row col-6">
-            <img id="sorteo" src="../multimedia/sorteo.png" alt="sorteo">
-            <h3>Sorteo</h3>
-            <p>Veni y participa! Por este mes estamos sorteando...</p>
+            <img id="sorteo" src="../multimedia/index/sorteo.jpg" alt="sorteo">
+            <h3 id="sorteo">Sorteo</h3>
+            <p>Veni y participa! Por este mes estamos sorteando este kit de belleza.</p>
             <div class="accordion accordion-flush" id="accordionFlushExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingFour">
@@ -159,19 +171,9 @@
                     </div>
                 </div>
             </div>
-            </div>
-            </div>
         </article>
 
     </section>
-
-    <!-- Links flotantes para acceso rapido -->
-    <div class="instagram">
-        <a target="_blank" href="https://www.instagram.com/lupitalashes.ros/"> <img src="../multimedia/instagram.png"
-                alt="instagram"></a>
-        <a target="_blank" href="https://wa.me/qr/JH7KEWBOBXBXJ1"> <img src="../multimedia/whatsapp.png"
-                alt="whatsapp"></a>
-    </div>
 
     <!-- Footer con links de interes -->
     <footer class="row">
@@ -181,6 +183,18 @@
             <a href="cuidados.html#preguntas">Preguntas Frecuentes</a>
             <a href="nosotros.html#sugerencias">Dejanos tu Opinion</a>
         </nav>
+
+        <div class="footer col-11">
+            <p>Seguinos en <a href="https://www.instagram.com/lupitalashes.ros/">Instagram</a></p>
+            <p>Contactate por <a href="https://walink.co/123776">Whatsapp</a></p>
+            <p>Veni a conocernos en <a href="https://goo.gl/maps/pc9YW4PvcWj1XgwV6">Fisherton, Rosario</a> </p>
+        </div>
+
+        <div class="footer3 col-11">
+            <p>Copyright LupitaLashes</p>
+            <p>Todos los derechos reservados.</p>
+        </div>
+
     </footer>
 
     <!-- Js Bootstrap -->

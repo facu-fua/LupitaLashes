@@ -1,9 +1,23 @@
 $colorFondo: aliceblue;
 
-$coloSobreFondo: rgba(240, 248, 255, 0.527);
+$coloSobreFondo: rgba(240, 248, 255, 0.575);
 
 $colorSombra: rgba(124, 124, 124, 0.541);
 
 $fuentePrimaria: "Yeseva One", cursive;
 
-$fuenteSecundaria: "Fira Sans", sans-serif;
+$fuenteSecundaria: 'Raleway', sans-serif;
+
+/* MAP */
+$tituloSeparador: (
+    borde: solid,
+    alineacion: center,
+    colorFondo: $colorFondo,
+    radioBorde: 20px,
+);
+
+@mixin tamaños ($width, $height) {
+    width: $width;
+    height: $height;
+    
+}
