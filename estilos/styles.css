@@ -421,6 +421,8 @@ section {
     header h1 {
       display: flex;
       flex-wrap: wrap; }
+  .logoTitulo {
+    flex-wrap: wrap; }
   .carousel {
     height: 250px; }
   .carousel-item img {
