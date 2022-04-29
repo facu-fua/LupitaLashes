@@ -1,5 +1,12 @@
 @charset "UTF-8";
 /* MAP */
+/* Extend */
+.tituloSeparador, .cuidado h3 {
+  border-style: solid;
+  text-align: center;
+  background-color: aliceblue;
+  border-radius: 20px; }
+
 /* HTML */
 html {
   font-family: "Fira Sans", sans-serif;
@@ -27,8 +34,7 @@ header {
   background-color: aliceblue; }
 
 .menuItems {
-  flex-wrap: wrap;
-  justify-content: space-between; }
+  flex-wrap: wrap; }
 
 .navbar-nav {
   gap: 20px; }
@@ -54,10 +60,6 @@ header {
   .turnos img, .turnos1 img {
     width: 25px;
     height: 25px; }
-
-/* EXTEND */
-.turnos1 {
-  flex-grow: 1; }
 
 .turnoDiv {
   display: flex;
@@ -93,15 +95,20 @@ section {
 
 /* INDEX */
 /* Presentacion */
-.presentacion {
-  display: flex;
-  --bs-gutter-x: 0px; }
+.carousel {
+  max-width: 700px;
+  height: auto; }
 
-.videopres iframe {
-  width: 560px;
-  height: 315px;
-  border: 0;
-  padding: 0px; }
+.carousel-indicators {
+  margin-left: 0px; }
+
+.carousel-caption {
+  color: black;
+  font-weight: bold;
+  background-color: rgba(240, 248, 255, 0.575);
+  border-radius: 5px; }
+  .carousel-caption h5 {
+    font-weight: bold; }
 
 .textopres {
   display: flex;
@@ -141,30 +148,14 @@ section {
       width: 200px;
       height: 200px; }
 
-.carousel {
-  max-width: 700px;
-  height: 100%; }
-
-.carousel-item img {
-  width: 100%;
-  height: 400px; }
-
-.carousel-caption {
-  color: black;
-  font-weight: bold;
-  background-color: rgba(240, 248, 255, 0.575);
-  border-radius: 5px; }
-  .carousel-caption h5 {
-    font-weight: bold; }
-
 /* PESTAÑAS */
-.seccionPestañas {
+.contenedorPestañas {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
   margin-top: 25px; }
-  .seccionPestañas article h3 {
+  .contenedorPestañas article h3 {
     font-weight: bold; }
 
 .pestanias {
@@ -183,6 +174,10 @@ section {
   border-radius: 20px;
   padding: 10px; }
 
+/* EXTEND */
+.turnos1 {
+  flex-grow: 1; }
+
 /* PROMOCIONES */
 .contenedorPromo {
   display: flex;
@@ -198,7 +193,8 @@ section {
   background-color: aliceblue;
   border-radius: 20px;
   box-shadow: 3px 3px rgba(124, 124, 124, 0.541);
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  margin-bottom: 25px; }
   .promocion h3 {
     text-align: center;
     font-weight: bold; }
@@ -217,30 +213,17 @@ section {
     text-align: center;
     flex-grow: 1; }
 
-.leerMas {
-  /* se puede eliminar */ }
-  .leerMas li {
-    display: none; }
-    .leerMas li:hover {
-      display: block; }
-
 /* CUIDADOS */
-.cuidados {
+.contenedorCuidados {
   display: flex;
   flex-direction: column; }
-  .cuidados h3 {
+  .contenedorCuidados h3 {
     font-weight: bolder; }
-  .cuidados h5 {
+  .contenedorCuidados h5 {
     font-weight: bold; }
 
 .cuidado {
-  margin-bottom: 20px;
-  /* Extend */ }
-  .cuidado .tituloSeparador, .cuidado h3 {
-    border-style: solid;
-    text-align: center;
-    background-color: aliceblue;
-    border-radius: 20px; }
+  margin-bottom: 20px; }
   .cuidado h3 {
     padding: 5px; }
   .cuidado p {
@@ -258,7 +241,7 @@ section {
   border-radius: 20px; }
 
 /* CONTACTO */
-.sectionContacto h4 {
+.contenedorContacto h4 {
   /* @extend .tituloSeparador; porque esto no se aplica? */
   border-style: solid;
   text-align: center;
@@ -270,25 +253,24 @@ section {
 .articuloContacto {
   --bs-gutter-x: 0px;
   margin: 25px 0px; }
-
-.contacto {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 50px; }
-  .contacto a {
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 15px;
-    margin-top: 30px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold; }
-    .contacto a:hover {
-      background-color: rgba(124, 124, 124, 0.541); }
-  .contacto img {
-    width: 40px;
-    height: 40px;
-    margin-left: 10px; }
+  .articuloContacto div {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px; }
+    .articuloContacto div a {
+      font-size: 20px;
+      border-radius: 10px;
+      padding: 15px;
+      margin-top: 30px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold; }
+      .articuloContacto div a:hover {
+        background-color: rgba(124, 124, 124, 0.541); }
+    .articuloContacto div img {
+      width: 40px;
+      height: 40px;
+      margin-left: 10px; }
 
 .horarios {
   padding-right: 10px;
@@ -312,18 +294,17 @@ section {
     margin-left: 5px; }
 
 /* NOSOTROS */
-.nosotros h2 {
+.contenedorNosotros h2 {
   border-style: solid;
   background-color: aliceblue;
   border-radius: 20px;
   text-align: center;
-  margin: 0px;
   align-self: flex-start;
   /* .row agrega display:flex */
   padding: 10px 15px;
   font-weight: bold; }
 
-.nosotros h4 {
+.contenedorNosotros h4 {
   border-style: solid;
   text-align: center;
   background-color: aliceblue;
@@ -333,16 +314,18 @@ section {
 
 .aboutus {
   --bs-gutter-x: 0px;
-  display: flex;
   align-items: flex-start;
   gap: 10px;
   margin-bottom: 50px; }
+  .aboutus div {
+    padding-left: 25px; }
   .aboutus p {
     text-align: center; }
   .aboutus img {
     --bs-gutter-x: 0px;
-    width: 250px;
-    height: 230px; }
+    width: 100%;
+    height: 100%;
+    border-radius: 20px; }
 
 .opinion {
   --bs-gutter-x: 0px;
@@ -356,6 +339,10 @@ section {
     align-items: center;
     justify-content: center;
     gap: 10px; }
+
+#dejarOpinion {
+  width: 100%;
+  margin-bottom: 10px; }
 
 /* FOOTER */
 .footer {
@@ -378,89 +365,111 @@ section {
   display: flex;
   justify-content: space-around; }
 
+.flotante {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 20px; }
+  .flotante img {
+    width: 40px;
+    height: 40px; }
+
 /* MediaQueries - Responsive */
 @media screen and (min-width: 500px) and (max-width: 991px) {
+  .menuBorder {
+    border-left: none;
+    padding-left: 0px; }
   /* INDEX */
-  .menu {
-    justify-content: flex-start; }
   .logoTitulo {
     flex-wrap: nowrap; }
-  .presentacion {
-    flex-direction: column;
-    flex-wrap: wrap; }
   .textopres {
     margin-top: 10px; }
   .loNuevo {
     flex-wrap: wrap; }
   /* PESTAÑAS */
-  /* GALERIA */
-  .fotos {
-    justify-content: space-evenly; }
   /* PROMOCIONES */
   /* CUIDADOS */
+  /* CONTACTO */
   /* NOSOTROS */
   .horarios {
-    text-align: center; } }
+    text-align: center; }
+  .aboutus {
+    flex-direction: column;
+    align-items: center; }
+    .aboutus div {
+      width: 75%;
+      margin-bottom: 15px; }
+  /* Footer */
+  .flotante {
+    display: block; }
+  .footer {
+    justify-content: space-around; }
+    .footer a {
+      margin-right: 40px; } }
 
 @media screen and (max-width: 499px) {
+  .menuBorder {
+    border-left: none;
+    padding-left: 0px; }
   /* INDEX */
   header {
     position: relative; }
-  .menu {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px; }
-    .menu ul {
-      flex-direction: column;
-      padding-left: 0px;
-      margin: 0px; }
   .logoTitulo {
-    flex-wrap: wrap; }
-  .presentacion {
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: left; }
+    flex-wrap: nowrap; }
+    .logoTitulo h1 {
+      display: flex;
+      flex-wrap: wrap; }
+  .carousel {
+    height: 250px; }
+  .carousel-item img {
+    width: 100%;
+    height: 250px; }
   .textopres {
     margin-top: 10px; }
-  .videopres iframe {
-    width: 100%;
-    height: auto; }
   .loNuevo {
     flex-direction: column; }
   /* PESTAÑAS */
-  .seccionPestañas {
+  .contenedorPestañas {
     flex-direction: column; }
-    .seccionPestañas article {
+    .contenedorPestañas article {
       display: flex;
       flex-direction: column; }
-  .pestañas {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: auto; }
-  /* GALERIA */
-  .fotos {
+  .turnoDiv {
     flex-direction: column; }
+    .turnoDiv a {
+      margin-bottom: 10px; }
   /* PROMOCIONES */
   .promocion {
     width: auto; }
   /* CUIDADOS */
-  /* NOSOTROS */
-  .nosotros {
-    justify-items: flex-start; }
-  .aboutus {
-    flex-direction: column; }
-  #dejarOpinion {
-    width: 100%; }
+  /* CONTACTO */
+  .articuloContacto a {
+    margin-left: 10px; }
+  .ubicacion h4 {
+    margin-bottom: 20px; }
   .ubicacion iframe {
     width: 100%;
     height: auto; }
+  /* NOSOTROS */
+  .nosotros {
+    justify-items: flex-start; }
+  .aboutus div {
+    margin-bottom: 15px; }
   /* Footer */
+  .flotante {
+    display: block; }
   body footer {
     gap: 10px; }
     body footer nav {
       display: flex;
       text-align: center;
       gap: 10px;
-      flex-direction: column;
-      gap: 10px; } }
+      flex-direction: column; }
+  .footer {
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    flex-direction: column;
+    gap: 10px; }
+  .footer3 {
+    margin-left: 20px; } }
