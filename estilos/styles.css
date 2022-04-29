@@ -16,6 +16,10 @@ html {
     font-family: "Yeseva One", cursive;
     font-weight: 100; }
 
+.container-fluid {
+  width: auto;
+  margin: 5px; }
+
 body {
   background: radial-gradient(ellipse 90% 75%, rgba(255, 203, 233, 0.938) 30%, white);
   border-radius: 10px;
@@ -350,7 +354,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 50px 20px 20px 20px;
+  margin: 50px 0px 5px 15px;
   border-radius: 15px; }
   .footer a {
     font-weight: bold;
@@ -414,9 +418,7 @@ section {
   /* INDEX */
   header {
     position: relative; }
-  .logoTitulo {
-    flex-wrap: nowrap; }
-    .logoTitulo h1 {
+    header h1 {
       display: flex;
       flex-wrap: wrap; }
   .carousel {
@@ -469,7 +471,6 @@ section {
     display: flex;
     text-align: center;
     gap: 10px;
-    flex-direction: column;
-    gap: 10px; }
+    flex-direction: column; }
   .footer3 {
     margin-left: 20px; } }

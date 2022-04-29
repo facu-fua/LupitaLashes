@@ -21,6 +21,11 @@ html {
     }
 }
 
+.container-fluid{
+    width: auto ;
+    margin: 5px;
+}
+
 body {
     background: radial-gradient(ellipse 90% 75%,
             rgba(255, 203, 233, 0.938) 30%,
@@ -469,7 +474,7 @@ max-width: 700px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 50px 20px 20px 20px;
+    margin: 50px 0px 5px 15px;
     border-radius: 15px;
 
     a {
@@ -566,11 +571,6 @@ max-width: 700px;
     /* INDEX */
     header {
         position: relative;
-    }
-
-    .logoTitulo {
-        flex-wrap: nowrap;
-
         h1 {
             display: flex;
             flex-wrap: wrap;
@@ -670,7 +670,6 @@ max-width: 700px;
         text-align: center;
         gap: 10px;
         flex-direction: column;
-        gap: 10px;
     }
 
     .footer3 {
