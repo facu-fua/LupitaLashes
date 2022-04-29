@@ -37,6 +37,9 @@ header {
   border-style: groove;
   background-color: aliceblue; }
 
+.menuEspacio {
+  width: 100%; }
+
 .menuItems {
   flex-wrap: wrap; }
 
@@ -385,7 +388,7 @@ section {
     padding-left: 0px; }
   /* INDEX */
   .logoTitulo {
-    flex-wrap: nowrap; }
+    flex-wrap: wrap; }
   .textopres {
     margin-top: 10px; }
   .loNuevo {

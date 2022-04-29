@@ -50,6 +50,10 @@ header {
     background-color: $colorFondo;
 }
 
+.menuEspacio{
+    width: 100%;
+}
+
 .menuItems {
     flex-wrap: wrap;
 }
@@ -516,7 +520,7 @@ max-width: 700px;
 
     /* INDEX */
     .logoTitulo {
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
 
     .textopres {
