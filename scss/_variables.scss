@@ -14,6 +14,9 @@ $tituloSeparador: (
     alineacion: center,
     colorFondo: $colorFondo,
     radioBorde: 20px,
+    grosor: bold,
+    fuente: $fuentePrimaria,
+    padding: 10px,
 );
 
 @mixin tamaños ($width, $height) {

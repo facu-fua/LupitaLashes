@@ -1,11 +1,14 @@
 @charset "UTF-8";
 /* MAP */
 /* Extend */
-.tituloSeparador, .cuidado h3 {
+.tituloSeparador, .tipoPestanias h3, .cuidado h3 {
   border-style: solid;
   text-align: center;
   background-color: aliceblue;
-  border-radius: 20px; }
+  border-radius: 20px;
+  font-weight: bold;
+  font-family: "Yeseva One", cursive;
+  padding: 10px; }
 
 /* HTML */
 html {
@@ -16,7 +19,7 @@ html {
     font-family: "Yeseva One", cursive;
     font-weight: 100; }
 
-.container-fluid {
+.section {
   width: auto;
   margin: 5px; }
 
@@ -36,9 +39,6 @@ header {
   border-color: #3d3c3c;
   border-style: groove;
   background-color: aliceblue; }
-
-.menuEspacio {
-  width: 100%; }
 
 .menuItems {
   flex-wrap: wrap; }
@@ -81,7 +81,8 @@ header {
   margin: 0px 0px 15px 20px; }
   .logoTitulo h1 {
     margin: 0px 0px 0px 10px;
-    text-decoration: underline; }
+    text-decoration: underline;
+    width: auto; }
 
 #logo {
   width: 80px;
@@ -119,12 +120,16 @@ section {
 
 .textopres {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-top: 50px; }
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px; }
   .textopres h3 {
-    margin: 0;
-    text-align: center; }
+    justify-content: center;
+    margin-bottom: 20px; }
+  .textopres img {
+    margin-right: 10px;
+    height: auto;
+    border-radius: 40px; }
   .textopres p {
     margin-top: 10px; }
 
@@ -162,8 +167,29 @@ section {
   flex-wrap: wrap;
   gap: 20px;
   margin-top: 25px; }
-  .contenedorPestañas article h3 {
-    font-weight: bold; }
+
+.tipoPestanias {
+  margin-bottom: 50px; }
+  .tipoPestanias p {
+    text-align: center; }
+  .tipoPestanias ul li {
+    text-decoration: none;
+    margin-top: 30px; }
+    .tipoPestanias ul li h5 {
+      font-weight: bold;
+      text-decoration: underline; }
+    .tipoPestanias ul li p {
+      font-weight: 100; }
+    .tipoPestanias ul li ul li {
+      font-weight: bold;
+      margin-bottom: 0px;
+      margin-top: 0px;
+      list-style: none; }
+  .tipoPestanias ul p {
+    text-align: justify; }
+
+#sinEspacio {
+  margin-top: 15px; }
 
 .pestanias {
   padding-top: 15px;
@@ -263,21 +289,30 @@ section {
   .articuloContacto div {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    flex-wrap: wrap; }
     .articuloContacto div a {
       font-size: 20px;
       border-radius: 10px;
-      padding: 15px;
-      margin-top: 30px;
       text-decoration: none;
       color: black;
-      font-weight: bold; }
+      font-weight: bold;
+      border-color: black;
+      background-color: aliceblue; }
+      .articuloContacto div a img {
+        width: 40px;
+        height: 40px;
+        margin-left: 10px; }
       .articuloContacto div a:hover {
         background-color: rgba(124, 124, 124, 0.541); }
+    .articuloContacto div div {
+      margin-top: 20px;
+      flex-direction: column;
+      align-items: center; }
     .articuloContacto div img {
-      width: 40px;
-      height: 40px;
-      margin-left: 10px; }
+      width: 400px;
+      height: 350px;
+      margin-bottom: 5px; }
 
 .horarios {
   padding-right: 10px;
@@ -346,6 +381,10 @@ section {
     align-items: center;
     justify-content: center;
     gap: 10px; }
+    .opinion form button {
+      border-color: black;
+      background-color: aliceblue;
+      color: black; }
 
 #dejarOpinion {
   width: 100%;
@@ -387,12 +426,13 @@ section {
     border-left: none;
     padding-left: 0px; }
   /* INDEX */
-  .logoTitulo {
-    flex-wrap: wrap; }
-  .textopres {
-    margin-top: 10px; }
-  .loNuevo {
-    flex-wrap: wrap; }
+  .textopres img {
+    margin: 10px;
+    width: 409px;
+    height: auto;
+    margin-right: 0px; }
+  .textopres p {
+    width: 100%; }
   /* PESTAÑAS */
   /* PROMOCIONES */
   /* CUIDADOS */
@@ -424,15 +464,18 @@ section {
     header h1 {
       display: flex;
       flex-wrap: wrap; }
-  .logoTitulo {
-    flex-wrap: wrap; }
+  #logo1 {
+    width: 100px;
+    height: auto; }
   .carousel {
     height: 250px; }
   .carousel-item img {
     width: 100%;
     height: 250px; }
   .textopres {
-    margin-top: 10px; }
+    margin-bottom: 0px; }
+    .textopres img {
+      margin-right: 0px; }
   .loNuevo {
     flex-direction: column; }
   /* PESTAÑAS */
@@ -452,11 +495,18 @@ section {
   /* CONTACTO */
   .articuloContacto a {
     margin-left: 10px; }
-  .ubicacion h4 {
-    margin-bottom: 20px; }
-  .ubicacion iframe {
-    width: 100%;
-    height: auto; }
+  .articuloContacto div {
+    margin-bottom: 10px; }
+    .articuloContacto div img {
+      width: 250px;
+      height: 200px; }
+  .ubicacion {
+    margin-top: 30px; }
+    .ubicacion h4 {
+      margin-bottom: 20px; }
+    .ubicacion iframe {
+      width: 100%;
+      height: auto; }
   /* NOSOTROS */
   .nosotros {
     justify-items: flex-start; }
