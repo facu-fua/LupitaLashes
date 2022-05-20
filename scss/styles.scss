@@ -50,10 +50,6 @@ body {
     }
 }
 
-.bsGutter {
-    --bs-gutter-x: 0px;
-}
-
 /* Navbar */
 header {
     padding-bottom: 15px;
@@ -708,6 +704,11 @@ header {
         width: 100px;
         height: auto;
     }
+
+    
+.bsGutter {
+    --bs-gutter-x: 0px;
+}
 
     /* INDEX */
 
