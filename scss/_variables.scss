@@ -2,15 +2,16 @@ $colorFondo: aliceblue;
 
 $coloSobreFondo: rgba(240, 248, 255, 0.575);
 
-$colorSombra: rgba(124, 124, 124, 0.541);
+$colorSombra: rgba(146, 146, 146, 0.664);
 
-$fuentePrimaria: "Yeseva One", cursive;
+$fuentePrimaria: "Yeseva One",
+cursive;
 
-$fuenteSecundaria: 'Raleway', sans-serif;
+$fuenteSecundaria: 'Raleway',
+sans-serif;
 
 /* MAP */
-$tituloSeparador: (
-    borde: solid,
+$tituloSeparador: (borde: solid,
     alineacion: center,
     colorFondo: $colorFondo,
     radioBorde: 20px,
@@ -22,5 +23,5 @@ $tituloSeparador: (
 @mixin tamaños ($width, $height) {
     width: $width;
     height: $height;
-    
+
 }

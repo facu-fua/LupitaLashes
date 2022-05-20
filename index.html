@@ -29,10 +29,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
-<body class="container-fluid">
+<body id="top" class="container-fluid">
 
-
-    <header id="top" class="row">
+    <header class="row">
 
         <!-- Menu navbar de Bootstrap -->
         <nav class="menuBoot navbar navbar-expand-lg navbar-light bg-light">
@@ -84,7 +83,7 @@
         <h1 class="animate__animated animate__fadeInUp">Lupitas Lashes</h1>
     </div>
 
-    <section class="row section container-fluid">
+    <section class="section row container-fluid">
 
         <div id="carouselExampleCaptions" class="row carousel carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -102,10 +101,11 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="multimedia/index/antesdespues.jpeg" class="d-block w-100" alt="volumenPestañas">
-                    <div class="carousel-caption d-md-block"> <!-- Borre la class d-none para que no desaparezca -->
+                    <div class="carousel-caption d-md-block">
+                        <!-- Borre la class d-none para que no desaparezca -->
                         <h5>Antes y Después</h5>
                         <p>Deslumbra con este volumen de pestañas.</p>
-                        <a href="paginas/pestanias.html#volumen">Ver más</a>
+                        <a class="btn btn-primary" href="paginas/pestanias.html#volumen">Ver más</a>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -113,7 +113,7 @@
                     <div class="carousel-caption d-md-block">
                         <h5>Veni y relájate</h5>
                         <p>Disfruta de una experiencia única a mano de nuestras lashistas expertas.</p>
-                        <a href="paginas/nosotros.html">Más sobre ellas aqui</a>
+                        <a class="btn btn-primary" href="paginas/nosotros.html">Más sobre nosotras</a>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -121,7 +121,7 @@
                     <div class="carousel-caption d-md-block">
                         <h5>Promoción 2x1</h5>
                         <p>Trae a una amiga y lleven sus pestañas a mitad de precio.</p>
-                        <a href="paginas/promociones.html">Ver más</a>
+                        <a class="btn btn-primary" href="paginas/promociones.html">Leer más</a>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -129,7 +129,7 @@
                     <div class="carousel-caption d-md-block">
                         <h5>¡Nuevo Sorteo!</h5>
                         <p>Por este mes vamos a estar sorteando estos productos.</p>
-                        <a href="paginas/promociones.html#sorteo">Ver mas</a>
+                        <a class="btn btn-primary" href="paginas/promociones.html#sorteo">Participar</a>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
@@ -149,7 +149,11 @@
             <h3 class="row col-12 tituloSeparador">Bienvenidas a LupitaLashes</h3>
             <img class="row col-xs-12 col-sm-12 col-md-5 col-lg-6" src="multimedia/index/bienvenidas.jpg" alt="">
             <p class="row col-xs-12 col-sm-12 col-md-7 col-lg-6">
-                Estamos contentas de tener un sitio para poder acercarles nuestras novedades, promociones y trabajos. Tenemos a las mejores lashistas de Rosario, por lo que prometemos una atención y trabajo de alto nivel. Nos especializamos en todo tipo de pestañas pelo por pelo, ya sea volumen, clásicas o con decorado. Te invitamos a recorrer nuestro sitio para aprender más sobre nuestro estudio, pestañas, tarifas y cuidados. 
+                Estamos contentas de tener un sitio para poder acercarles nuestras novedades, promociones y trabajos.
+                Tenemos a las mejores lashistas de Rosario, por lo que prometemos una atención y trabajo de alto nivel.
+                Nos especializamos en todo tipo de pestañas pelo por pelo, ya sea volumen, clásicas o con decorado. Te
+                invitamos a recorrer nuestro sitio para aprender más sobre nuestro estudio, pestañas, tarifas y
+                cuidados.
             </p>
         </div>
 
@@ -172,9 +176,9 @@
     </section>
 
     <!-- Link flotante celular -->
-<div class="flotante">
-    <a href="https://walink.co/123776"><img src="multimedia/whatsapp.png" alt="linkWhatsapp"></a>
-</div>
+    <div class="flotante">
+        <a target="_blank" href="https://walink.co/123776"><img src="multimedia/whatsapp.png" alt="linkWhatsapp"></a>
+    </div>
 
     <!-- Footer con links de interes -->
     <footer class="row">
@@ -186,9 +190,10 @@
         </nav>
 
         <div class="footer col-11">
-            <p>Seguinos en <a href="https://www.instagram.com/lupitalashes.ros/">Instagram</a></p>
-            <p>Contáctate por <a href="https://walink.co/123776">Whatsapp</a></p>
-            <p>Veni a conocernos en <a href="https://goo.gl/maps/pc9YW4PvcWj1XgwV6">Fisherton, Rosario</a> </p>
+            <p>Seguinos en <a target="_blank" href="https://www.instagram.com/lupitalashes.ros/">Instagram</a></p>
+            <p>Contáctate por <a target="_blank" href="https://walink.co/123776">Whatsapp</a></p>
+            <p>Veni a conocernos en <a target="_blank" href="https://goo.gl/maps/pc9YW4PvcWj1XgwV6">Fisherton,
+                    Rosario</a> </p>
         </div>
 
         <div class="footer3 col-11">

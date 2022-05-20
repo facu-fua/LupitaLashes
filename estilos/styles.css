@@ -19,10 +19,6 @@ html {
     font-family: "Yeseva One", cursive;
     font-weight: 100; }
 
-.section {
-  width: auto;
-  margin: 5px; }
-
 body {
   background: radial-gradient(ellipse 90% 75%, rgba(255, 203, 233, 0.938) 30%, white);
   border-radius: 10px;
@@ -31,7 +27,20 @@ body {
   body img {
     border-radius: 10px; }
 
-/* Nav */
+/* Boton bootstrap */
+.btn-primary {
+  color: black;
+  background-color: aliceblue;
+  font-weight: 600;
+  border-color: black; }
+  .btn-primary:hover {
+    background-color: rgba(146, 146, 146, 0.664);
+    border-color: black; }
+
+.bsGutter {
+  --bs-gutter-x: 0px; }
+
+/* Navbar */
 header {
   padding-bottom: 15px; }
 
@@ -52,6 +61,14 @@ header {
   font-weight: bold;
   margin-right: 30px; }
 
+.nav-item:hover {
+  font-weight: 600;
+  letter-spacing: 2px;
+  transition: letter-spacing 0.6s; }
+
+.active {
+  font-weight: bolder; }
+
 .menuBorder {
   border-left: solid;
   border-width: 1px;
@@ -68,11 +85,7 @@ header {
     width: 25px;
     height: 25px; }
 
-.turnoDiv {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; }
-
+/* Logos y Titulo */
 .logoTitulo {
   --bs-gutter-x: 0px;
   display: flex;
@@ -93,7 +106,7 @@ header {
   height: auto; }
 
 /* Section */
-section {
+.section {
   --bs-gutter-x: 0px;
   display: flex;
   justify-content: center;
@@ -125,13 +138,16 @@ section {
   margin-bottom: 50px; }
   .textopres h3 {
     justify-content: center;
-    margin-bottom: 20px; }
+    margin-bottom: 30px; }
   .textopres img {
     margin-right: 10px;
     height: auto;
     border-radius: 40px; }
   .textopres p {
-    margin-top: 10px; }
+    margin-top: 10px;
+    font-weight: bolder;
+    text-align: center;
+    align-items: center; }
 
 .loNuevo {
   margin: 40px 0px 0px 0px;
@@ -141,19 +157,18 @@ section {
     text-align: center; }
   .loNuevo div {
     padding-top: 10px;
+    padding: 10px 25px 0px 25px;
     display: flex;
     flex-direction: column;
     align-items: center; }
   .loNuevo a img {
     width: 180px;
     height: 180px;
-    /* width: 180px;
-            height: 180px; */
     border-radius: 20px;
     background-color: aliceblue;
     padding: 10px;
     margin-bottom: 10px;
-    box-shadow: 3px 3px rgba(124, 124, 124, 0.541);
+    box-shadow: 3px 3px rgba(146, 146, 146, 0.664);
     transition: 1s; }
     .loNuevo a img:hover {
       filter: blur(1.4px);
@@ -171,22 +186,27 @@ section {
 .tipoPestanias {
   margin-bottom: 50px; }
   .tipoPestanias p {
-    text-align: center; }
-  .tipoPestanias ul li {
-    text-decoration: none;
-    margin-top: 30px; }
-    .tipoPestanias ul li h5 {
-      font-weight: bold;
-      text-decoration: underline; }
-    .tipoPestanias ul li p {
-      font-weight: 100; }
-    .tipoPestanias ul li ul li {
-      font-weight: bold;
-      margin-bottom: 0px;
-      margin-top: 0px;
-      list-style: none; }
-  .tipoPestanias ul p {
-    text-align: justify; }
+    text-align: center;
+    font-style: oblique;
+    font-size: 15px; }
+  .tipoPestanias ul {
+    list-style: upper-roman; }
+    .tipoPestanias ul li {
+      text-decoration: none;
+      margin-top: 30px; }
+      .tipoPestanias ul li h5 {
+        font-weight: bold;
+        text-decoration: underline; }
+      .tipoPestanias ul li p {
+        font-weight: 100; }
+      .tipoPestanias ul li ul li {
+        color: #d687c5;
+        font-weight: bold;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        list-style: none; }
+    .tipoPestanias ul p {
+      text-align: justify; }
 
 #sinEspacio {
   margin-top: 15px; }
@@ -202,6 +222,7 @@ section {
       margin: 5px; }
 
 .fotoBoot {
+  align-self: center;
   max-width: 500px;
   background-color: aliceblue;
   border-radius: 20px;
@@ -210,6 +231,11 @@ section {
 /* EXTEND */
 .turnos1 {
   flex-grow: 1; }
+
+.turnoDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
 
 /* PROMOCIONES */
 .contenedorPromo {
@@ -225,7 +251,7 @@ section {
   align-items: center;
   background-color: aliceblue;
   border-radius: 20px;
-  box-shadow: 3px 3px rgba(124, 124, 124, 0.541);
+  box-shadow: 3px 3px rgba(146, 146, 146, 0.664);
   padding-bottom: 10px;
   margin-bottom: 25px; }
   .promocion h3 {
@@ -236,7 +262,7 @@ section {
     height: 180px;
     margin: 10px;
     border-radius: 20px;
-    box-shadow: 3px 3px rgba(124, 124, 124, 0.541);
+    box-shadow: 3px 3px rgba(146, 146, 146, 0.664);
     --bs-gutter-x: 0px; }
   .promocion ul {
     padding: 5px;
@@ -244,7 +270,17 @@ section {
     text-align: center; }
   .promocion p {
     text-align: center;
+    font-weight: bold;
     flex-grow: 1; }
+
+.botonAcordeon {
+  color: #4072fc;
+  font-weight: 600;
+  font-style: italic;
+  text-decoration: underline; }
+
+.textoAcordeon {
+  font-style: italic; }
 
 /* CUIDADOS */
 .contenedorCuidados {
@@ -273,9 +309,11 @@ section {
   background-color: aliceblue;
   border-radius: 20px; }
 
+.pregunt p {
+  font-style: italic; }
+
 /* CONTACTO */
 .contenedorContacto h4 {
-  /* @extend .tituloSeparador; porque esto no se aplica? */
   border-style: solid;
   text-align: center;
   background-color: aliceblue;
@@ -303,8 +341,6 @@ section {
         width: 40px;
         height: 40px;
         margin-left: 10px; }
-      .articuloContacto div a:hover {
-        background-color: rgba(124, 124, 124, 0.541); }
     .articuloContacto div div {
       margin-top: 20px;
       flex-direction: column;
@@ -342,7 +378,6 @@ section {
   border-radius: 20px;
   text-align: center;
   align-self: flex-start;
-  /* .row agrega display:flex */
   padding: 10px 15px;
   font-weight: bold; }
 
@@ -362,7 +397,8 @@ section {
   .aboutus div {
     padding-left: 25px; }
   .aboutus p {
-    text-align: center; }
+    text-align: center;
+    font-weight: 600; }
   .aboutus img {
     --bs-gutter-x: 0px;
     width: 100%;
@@ -405,7 +441,7 @@ section {
     padding: 5px;
     border-radius: 10px; }
     .footer a:hover {
-      background-color: rgba(124, 124, 124, 0.541); }
+      background-color: rgba(146, 146, 146, 0.664); }
 
 .footer3 {
   display: flex;
@@ -415,7 +451,8 @@ section {
   display: none;
   position: fixed;
   bottom: 30px;
-  right: 20px; }
+  right: 20px;
+  z-index: 25; }
   .flotante img {
     width: 40px;
     height: 40px; }
@@ -425,6 +462,11 @@ section {
   .menuBorder {
     border-left: none;
     padding-left: 0px; }
+  /* Navbar */
+  header {
+    position: sticky;
+    top: 0px;
+    z-index: 50; }
   /* INDEX */
   .textopres img {
     margin: 10px;
@@ -458,20 +500,26 @@ section {
   .menuBorder {
     border-left: none;
     padding-left: 0px; }
-  /* INDEX */
+  /* Navbar */
   header {
-    position: relative; }
+    position: sticky;
+    top: 0px;
+    z-index: 50; }
     header h1 {
       display: flex;
       flex-wrap: wrap; }
+  /* Logo y titulo */
   #logo1 {
     width: 100px;
     height: auto; }
+  /* INDEX */
   .carousel {
     height: 250px; }
   .carousel-item img {
     width: 100%;
     height: 250px; }
+  .carousel-item p {
+    display: none; }
   .textopres {
     margin-bottom: 0px; }
     .textopres img {
@@ -515,17 +563,12 @@ section {
   /* Footer */
   .flotante {
     display: block; }
-  body footer {
-    gap: 10px; }
-    body footer nav {
-      display: flex;
-      text-align: center;
-      gap: 10px;
-      flex-direction: column; }
   .footer {
-    display: flex;
     text-align: center;
     gap: 10px;
     flex-direction: column; }
   .footer3 {
-    margin-left: 20px; } }
+    margin-top: 20px;
+    margin-left: 20px;
+    flex-direction: column;
+    align-items: center; } }
